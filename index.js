@@ -1,4 +1,6 @@
 const express = require('express')
+const dotenv = require('dotenv')
+dotenv.config()
 
 const app = express()
 const PORT = 80
@@ -12,7 +14,17 @@ app.get('/', (req, res) => {
 })
 
 app.get('/repos', (req, res) => {
-  res.send('Pegando os REPOS')
+  
+  res.write('DATA ')
+
+  
+  try {
+    res.write(process.env.NAME)
+  } catch (e) {
+    res.write('VAR - Not available')
+  }
+
+  res.end()
 })
 
 // Export the Express API
