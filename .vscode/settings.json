@@ -15,4 +15,5 @@
     }
   },
   "terminal.integrated.defaultProfile.osx": "zsh-default",
+  "workbench.colorTheme": "Monokai Dimmed"
 }

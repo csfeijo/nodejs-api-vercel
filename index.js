@@ -11,7 +11,7 @@ app.listen(PORT, () => {
 })
 
 app.get('/', (req, res) => {
-  res.send('Bombando na Azion')
+  res.send('Bombando na Aula de NodeJS')
 })
 
 app.get('/variables', (req, res) => {  
