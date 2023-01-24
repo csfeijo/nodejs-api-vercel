@@ -18,7 +18,10 @@ app.get('/variables', (req, res) => {
   res.write('ENV VARIABLES ')
 
   try {
+    res.write('\n')
     res.write(process.env.NAME)
+    res.write('\n')
+    res.write(process.env.CURSO)
   } catch (e) {
     res.write('VAR - Not available')
   }
